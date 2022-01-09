@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+      <title> order form</title>
+      <style>
+        table, th, td {
+          border: 2px solid rgb(167, 165, 165);
+          border-collapse: separate;
+        }
+        </style>
+  </head>
+  <body>
+        <h2>Weekend Orders</h2>
+
+        <form action="processOrder.php" method="get">
+            <table >
+                <tr >
+                    <td rowspan="2" >Person's Details</td>
+                    <td colspan="2"><label for ="firstName">First Name: </label><input type="text"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><label for ="lastName">Last Name: </label><input type="text"></td>
+
+                </tr>
+                <tr>
+                    <td> Mene Choices </td>
+                    <td colspan="2">
+                        <input type="checkbox" name="saturday"><label for ="saturday">Saturday</label>
+                        <input type="checkbox" name="Sunday"><label for ="Sunday">Sunday</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Rroom Number</td>
+                    <td colspan="2">
+                        <select name="room number">
+                            <option value="Room1">Room 1</option>
+                            <option value="Room2">Room 2</option>
+                            <option value="Room3">Room3</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Paid</td>
+                    <td colspan="2">
+                        <input type="radio" name="payment"><label for ="yes">Yes</label>
+                        <input type="radio" name="payment"><label for ="no">No</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" style="text-align: center">
+                        <input type="submit"><input type="reset">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Day</td>
+                    <td>Menu</td>
+                    <td>Image</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>Soup <a href="souping.html">See ingredients</a></td>
+                    <td> <img src="soup.jpg" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td>Pizza <a href="pizza.html">See ingredients</a></td>
+                    <td> <img src="pizza.jpg" width="30"></td>
+                </tr>
+                <tr>
+                    <td colspan="3" style="text-align: center">
+                        <a href="http://www.pizzahut.mu"><img src="menu.png" height="30"></a>
+                    </td>
+                </tr>
+            </table>
+
+        </form>
+
+  </body>
+</html>
